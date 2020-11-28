@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,400,500,700,900');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300&display=swap');
+
+*{
+  margin:0;
+	padding:0;
+	text-decoration:none;
+	font-family: 'IBM Plex Sans', 'Roboto';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background: #596275
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100vw;
+
+	background-color: #303952;
+	color: white;
+}
+
+.headButtons {
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+#headLabelText {
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+#headLinks {
+  padding: 20px;
+}
+
+p {
+  color: white;
+}
+
+.headButtons:hover {
+  background-color: #203246;
+}
+
+.chooseContainer {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chooseTestButton {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #303952;
+  background-color: black;
+  display: inline-block;
+  padding:15px 20px;
+  font-family: 'IBM Plex Sans', 'Roboto';
+  cursor:pointer;
+  background:#f1f2f6;
+  transition: background 0.1s ease;
+  margin:5px 0;
+  width:100%;
+  text-align: center;
+  border-radius:5px;
+}
+
+.chooseTestButton:hover {
+  background-color: #dfe4ea;
+}
+
+.specsContainer, .useContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  margin-top: 70px;
+}
+
+.specsClass, .useClass {
+
+  width: inherit;
+  margin: 5px;
+}
+
+.chooseRadio, .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chooseRadioClass, .textPriceClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.radio, .textPrice, .textPriceInput {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.textPriceInput {
+  width: 95px;
+  border: 0px;
+}
+
+#fetchLaptops {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#fetchLaptops + label {
+  margin-top: 50px;
+  padding: 7px 20px;
+  background: #596275;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#fetchLaptops + label:hover {
+  background: #525768;
+}
+
+#addLaptops {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#addLaptops + label {
+  margin-top: 50px;
+  padding: 7px 20px;
+  background: #596275;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#addLaptops + label:hover {
+  background: #525768;
+}
+
+#useTest {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#useTest + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #303952;
+  display: inline-block;
+  padding:15px 20px;
+  font-family: 'IBM Plex Sans', 'Roboto';
+  cursor:pointer;
+  background:#f1f2f6;
+  transition: background 0.1s ease;
+  margin:5px 0;
+  width:100%;
+  text-align: center;
+  border-radius:5px;
+
+}
+
+#useTest + label:hover {
+  background-color: #dfe4ea;
+}
+
+table {
+  /* width: 100vw; */
+  position: absolute;
+  left: 0;
+}
+
+#addButton {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+}
+
+td, th{
+  padding:0 10px ;
+}
+
+.adminDBButton {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #303952;
+  display: inline-block;
+  padding:15px 20px;
+  font-family: 'IBM Plex Sans', 'Roboto';
+  cursor:pointer;
+  background:#f1f2f6;
+  transition: background 0.1s ease;
+  margin:5px 0;
+  width:inherit;
+  text-align: center;
+  border-radius:5px;
+}
+
+.adminDBButton:hover {
+  background-color: #dfe4ea;
+}
+
+.addForm {
+  width: 250px;
+  margin-top: 70px;
+}
